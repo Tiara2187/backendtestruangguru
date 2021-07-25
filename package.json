@@ -1,0 +1,41 @@
+{
+  "name": "backendtestruangguru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "env-cmd -f ./env/test.env jest --watchAll --coverage --verbose --silent --runInBand",
+    "dev": "env-cmd -f ./env/dev.env nodemon servers.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.0.1",
+    "mongoose": "^5.13.3",
+    "mongoose-unique-validator": "^2.0.3",
+    "node-cron": "^3.0.0",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.12",
+    "@types/jest": "^26.0.24",
+    "@types/jsonwebtoken": "^8.5.4",
+    "@types/mongoose": "^5.11.97",
+    "@types/supertest": "^2.0.11",
+    "bcryptjs": "^2.4.3",
+    "env-cmd": "^10.1.0",
+    "jest": "^27.0.6",
+    "supertest": "^6.1.4"
+  },
+  "engines": {
+    "node": "14.16.0",
+    "npm": "6.14.11"
+  }
+}
